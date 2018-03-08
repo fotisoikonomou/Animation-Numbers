@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta http-equiv="Content-Type" content="text/html;
-    charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta charset="urf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="">
+<meta name="description" content="">
 <meta name="author" content="">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
@@ -30,20 +29,18 @@ width:30px;
 <span id="el">Αποτέλεσμα</span>
 <button onClick="result()"> click me </button>
 <h2>Dummy code by fotis 2018</h2>
-
 <script>
 function result() {
 if(!$.isNumeric($('#first').val())) {
-        alert("Πρέπει να βάλεις μόνο αριθμούς!");
-        return false;
-    }
+alert("Πρέπει να βάλεις μόνο αριθμούς!");
+return false;
+}
 else if(!$.isNumeric($('#second').val())) {
-        alert("Πρέπει να βάλεις μόνο αριθμούς!");
-        return false;
-    }
-
+alert("Πρέπει να βάλεις μόνο αριθμούς!");
+return false;
+}
 var first = $( "#first" ).val();
- console.log(first);
+console.log(first);
 var second=  $( "#second" ).val();
 console.log(second);
 if (first > second){alert("Πρέπει ο πρώτος αριθμός να είναι μικρότερος απο τον 2");}
