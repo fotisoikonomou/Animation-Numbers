@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;
+    charset=UTF-8">
+<meta charset="urf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="">
+<meta name="author" content="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<style>
+body{
+text-align: center;
+margin:300px 0 0;
+position: relative;
+}
+#el {
+background:blue;
+color:white;
+font-size:24px;
+font-style: italic;
+width:30px;
+}
+</style>
+<body>
+<h1>Βάλε 2 αριθμούς, ετσι ώστε ο δεύτερος αριθμός να είναι μεγαλύτερος</h1>
+<input class= "count" type="text" name ="number" id="first">
+<input class="count" type="text" name="result" id="second"/>
+<span id="el">Αποτέλεσμα</span>
+<button onClick="result()"> click me </button>
+<h2>Dummy code by fotis 2018</h2>
+
+<script>
+function result() {
+if(!$.isNumeric($('#first').val())) {
+        alert("Πρέπει να βάλεις μόνο αριθμούς!");
+        return false;
+    }
+else if(!$.isNumeric($('#second').val())) {
+        alert("Πρέπει να βάλεις μόνο αριθμούς!");
+        return false;
+    }
+
+var first = $( "#first" ).val();
+ console.log(first);
+var second=  $( "#second" ).val();
+console.log(second);
+if (first > second){alert("Πρέπει ο πρώτος αριθμός να είναι μικρότερος απο τον 2");}
+else if (first == second) {
+alert("πρέπει ο πρώτος αριθμός να είναι μικρότερος");
+}
+else {
+jQuery({someValue: first}).animate({someValue: second}, {
+duration: 1000,
+easing:'swing', 
+step: function() {
+$('#el').text(Math.ceil(this.someValue));
+$('#el').css("font-size", function(index){
+return index +=50;
+});
+$('#el').animate({width:90},"slow");
+}
+});
+}
+}
+</script>
+</body>
