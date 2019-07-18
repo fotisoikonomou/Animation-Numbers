@@ -1,4 +1,4 @@
 # Animation-Numbers
-Απλό jquery script  που αυξάνει ένα αριθμο απο τον μικροτερο στον μεγαλύτερο.
-Απλά βάλε 2 αριθμούς και παίξε !!
-Απλά πρίν από κάθε αλλαγή στις τιμές, κάνε ανανέωση τον browser , ετσι ώστε να δουλέψει!
+A very simple script that increases number from the lowest to greater.
+Just put 2 numbers and play around!
+Before every changes in the prices refresh the browser in order to work
